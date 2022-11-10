@@ -1,5 +1,7 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -35,4 +37,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  height: fit-content;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  display: flex;
+  background-color: black;
+  height: 25rem;
+  width: 80%;
+  background-image: linear-gradient(to right, #e7e7e7, #eeeeee);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+.title {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+}
+
+.description-pos {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.inner-description-pos {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.submitButtons {
+  height: 1.3rem;
+  width: 5rem;
+}
+
+.inner-separate {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+.separate-item {
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
 }
